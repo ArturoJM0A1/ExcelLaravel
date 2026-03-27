@@ -117,4 +117,4 @@ npm run build
 
 ## Notas
 
-- El proyecto ya incluye un archivo adicional llamado `COMO_SE_CREO_DESDE_CERO.md` con la explicacion detallada del proceso de construccion.
+- El proyecto ya incluye una carpeta adicional llamado LEER que explica las características fundamentales del proyecto
