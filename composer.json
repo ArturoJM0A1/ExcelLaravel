@@ -38,11 +38,11 @@
             "@php artisan key:generate",
             "@php artisan migrate --force",
             "npm install",
-            "npm run build"
+            "node .\\node_modules\\vite\\bin\\vite.js build"
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
-            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1 --timeout=0\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
+            "node .\\node_modules\\concurrently\\dist\\bin\\concurrently.js -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve --host=127.0.0.1 --port=8000\" \"php artisan queue:listen --tries=1 --timeout=0\" \"php artisan pail --timeout=0\" \"node .\\node_modules\\vite\\bin\\vite.js --host 127.0.0.1\" --names=server,queue,logs,vite --kill-others"
         ],
         "test": [
             "@php artisan config:clear --ansi",

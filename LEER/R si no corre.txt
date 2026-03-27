@@ -1,0 +1,7 @@
+php artisan optimize:clear
+php artisan serve --host=127.0.0.1 --port=8000
+
+
+Luego abre:
+http://127.0.0.1:8000
+

@@ -58,16 +58,26 @@ php artisan migrate
 En una terminal:
 
 ```bash
-php artisan serve
+php artisan serve --host=127.0.0.1 --port=8000
 ```
 
 En otra terminal:
 
 ```bash
-npm run dev
+node .\node_modules\vite\bin\vite.js --host 127.0.0.1
 ```
 
 Luego abre la URL que muestre Laravel, normalmente [http://127.0.0.1:8000](http://127.0.0.1:8000).
+
+Importante: no abras `http://localhost` sin puerto si tienes otro servicio ocupando el puerto `80`. En este proyecto la URL de desarrollo correcta es `http://127.0.0.1:8000` o `http://localhost:8000` cuando Laravel se ejecuta con `php artisan serve`.
+
+Tambien puedes usar un solo comando:
+
+```bash
+composer run dev
+```
+
+Ese comando ya arranca Laravel y Vite sin depender de `npm run dev`.
 
 ## Flujo de uso
 
