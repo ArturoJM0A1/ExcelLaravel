@@ -8,10 +8,6 @@ El archivo fisico de la base de datos esta aqui:
 
 `database/database.sqlite`
 
-Ruta completa en este proyecto:
-
-`D:\Archivos AJM\Para chamba\Nexen\ExcelLaravl\database\database.sqlite`
-
 ## Como esta configurada
 
 En el archivo `.env` la conexion activa es:

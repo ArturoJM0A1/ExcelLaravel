@@ -1,5 +1,7 @@
 # Respecto SQLite
-- Desde Laravel 11, SQLite es el motor de base de datos predeterminado para nuevos proyectos. Es una opción excelente para desarrollo local, pruebas automatizadas
+
+- Desde Laravel 11, SQLite es el motor de base de datos predeterminado para nuevos proyectos. Es una opción excelente para desarrollo local y pruebas automatizadas
+- SQLite no requiere una instalación tradicional (como instalar un servidor SQL, MySQL o PostgreSQL) porque no es un proceso de servidor independiente.
 
 ## Uso de SQLite
 
@@ -42,5 +44,3 @@ Es ideal para:
 * Proyectos IoT
 
 Debido a su **portabilidad** y **mantenimiento**.
-
-
