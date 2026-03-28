@@ -38,6 +38,6 @@ Es ideal para:
 * Dispositivos móviles
 * Proyectos IoT
 
-Debido a su **portabilidad** y **nulo mantenimiento**.
+Debido a su **portabilidad** y **mantenimiento**.
 
 
