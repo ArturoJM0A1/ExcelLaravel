@@ -1,0 +1,3 @@
+usa SQLite, accedes a la base de datos abriendo el archivo:
+
+database.sqlite
