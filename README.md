@@ -132,4 +132,4 @@ npm run build
 
 ## Notas
 
-- El proyecto ya incluye una carpeta adicional llamada LEER que explica las características fundamentales del proyecto
+- El proyecto ya incluye una carpeta adicional llamada "Notas de la App" ahi se explica las características fundamentales del proyecto
