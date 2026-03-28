@@ -1,4 +1,4 @@
-# tipos de excel
+# Tipos de excel aceptados
 
 ## Que archivos se pueden subir
 

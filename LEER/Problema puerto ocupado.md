@@ -1,4 +1,4 @@
-## Nota
+## Problema puerto ocupado
 En mi caso uso el puerto `8080` porque el puerto `80` lo tengo ocupado con otro servicio.
 
 ---
