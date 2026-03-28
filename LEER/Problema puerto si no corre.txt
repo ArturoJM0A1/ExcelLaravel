@@ -2,7 +2,6 @@ Actualizar
 npm run build
 
 
-
 Levantar el Backend
 php artisan optimize:clear
 php artisan serve --host=127.0.0.1 --port=8000

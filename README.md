@@ -105,6 +105,7 @@ Ese comando ya arranca Laravel y Vite sin depender de `npm run dev`.
 - Las reglas de validacion de producto se centralizaron en `App\Support\ProductValidationRules`.
 - La lectura del Excel se resolvio con `PhpSpreadsheet` para soportar `.xlsx` y `.xls`.
 - El frontend replica validaciones clave para dar feedback inmediato, pero el backend sigue siendo la fuente final de verdad.
+- Se usa como base de datos SQLite, ya que es una base de datos SQL ligera. A diferencia de sistemas grandes como MySQL o PostgreSQL, no requiere una instalación compleja ni un servidor dedicado, lo que la hace ideal para aplicaciones pequeñas, dispositivos móviles o aplicaciones de escritorio.
 
 ## Pruebas
 

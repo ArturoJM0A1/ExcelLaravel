@@ -145,7 +145,7 @@ Punto de entrada publico del proyecto en el navegador.
 - `public/build/`
   Archivos frontend compilados por Vite para produccion o fallback.
 
-## Donde esta React
+## React
 
 React vive principalmente en:
 
@@ -196,7 +196,7 @@ Aqui vive el frontend de la aplicacion.
 - `welcome.blade.php`
   Vista heredada del proyecto base de Laravel. No es la vista principal de esta app.
 
-## Donde estaria Vue
+## Vue no se uso
 
 En este repositorio **Vue no esta presente como capa activa del proyecto**.
 
@@ -286,11 +286,11 @@ Las pruebas automatizadas estan en:
 - `tests/Feature/ExampleTest.php`
 - `tests/Unit/ExampleTest.php`
 
-## Idea mental del proyecto
+## Idea del proyecto
 
-Puedes pensar el proyecto asi:
+Herramientas:
 
 - **Laravel** sirve la aplicacion, valida datos, habla con la base de datos y expone la API.
 - **React** pinta la interfaz y maneja la experiencia de usuario.
 - **Vite** conecta ambas capas en desarrollo y build.
-- **Vue** no participa en la version actual del proyecto.
+
