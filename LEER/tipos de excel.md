@@ -94,7 +94,7 @@ Ejemplos validos:
 Ejemplos no validos:
 
 - `3.5`
-- `-2`
+- `-5`
 - `muchas`
 
 ### 5. URL de imagen del producto

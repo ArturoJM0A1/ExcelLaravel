@@ -1,6 +1,8 @@
 usa SQLite, accedes a la base de datos abriendo el archivo:
 database.sqlite
 
+database.sqlite Guarda (al cargar) y actualiza (al editar). Unicamente el ultimo Excel agregado
+
 Puedes usar la extensión en  VS Code de;
 SQLite Viewer
 Florian Klampfer
