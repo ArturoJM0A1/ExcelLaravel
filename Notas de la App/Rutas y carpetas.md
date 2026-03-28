@@ -2,14 +2,13 @@
 
 Este documento explica como esta organizado el proyecto y como se relacionan Laravel, React y Vite dentro de la aplicacion.
 
-## Resumen rapido
+## Resumen
 
 Este repositorio **usa Laravel como backend y React como frontend**.
 
 - **Laravel** maneja rutas, controladores, validaciones, servicios, modelo de datos y base de datos.
 - **React** renderiza la interfaz del catalogo en el navegador.
 - **Vite** compila y sirve los archivos frontend para que Laravel los cargue.
-- **Vue no esta implementado en este proyecto**. No hay componentes `.vue`, ni plugin de Vue en `vite.config.js`, ni carpetas activas dedicadas a Vue.
 
 ## Estructura principal
 
@@ -63,36 +62,36 @@ Aqui esta la logica principal del backend.
 - `app/Http/Controllers/`
   Controladores que responden a las peticiones HTTP.
   Ejemplos:
+
   - `ProductController.php`: lista productos y actualiza productos.
   - `ProductImportController.php`: recibe el Excel, lo valida y reemplaza el catalogo.
-
 - `app/Http/Requests/`
   Validaciones de entrada para endpoints.
   Ejemplos:
+
   - `ImportProductsRequest.php`: valida que el archivo sea Excel.
   - `UpdateProductRequest.php`: valida los campos al editar productos.
-
 - `app/Models/`
   Modelos Eloquent.
   Ejemplo:
-  - `Product.php`: representa la tabla de productos.
 
+  - `Product.php`: representa la tabla de productos.
 - `app/Services/`
   Servicios de negocio.
   Ejemplo:
-  - `ProductSpreadsheetImporter.php`: abre el Excel, interpreta columnas y arma los productos.
 
+  - `ProductSpreadsheetImporter.php`: abre el Excel, interpreta columnas y arma los productos.
 - `app/Support/`
   Apoyo reutilizable del dominio.
   Ejemplo:
-  - `ProductValidationRules.php`: reglas compartidas para validar productos.
 
+  - `ProductValidationRules.php`: reglas compartidas para validar productos.
 - `app/Rules/`
   Reglas de validacion personalizadas de Laravel.
-
 - `app/Providers/`
   Configuracion de servicios de la aplicacion.
   Ejemplo:
+
   - `AppServiceProvider.php`: aqui se ajusto el comportamiento de Vite cuando el archivo `public/hot` queda obsoleto.
 
 #### `routes/`
@@ -102,10 +101,10 @@ Define las rutas del proyecto.
 - `routes/web.php`
   Rutas web que devuelven vistas.
   En este proyecto, la ruta `/` devuelve la vista `app`.
-
 - `routes/api.php`
   Rutas API que consume React.
   Endpoints actuales:
+
   - `GET /api/products`
   - `POST /api/products/import`
   - `PUT /api/products/{product}`
@@ -117,8 +116,8 @@ Aqui esta la estructura y evolucion de la base de datos.
 - `database/migrations/`
   Archivos que crean tablas.
   Ejemplo:
-  - `2026_03_26_000003_create_products_table.php`
 
+  - `2026_03_26_000003_create_products_table.php`
 - `database/seeders/`
   Datos de prueba o carga inicial, si se usan.
 
@@ -141,7 +140,6 @@ Punto de entrada publico del proyecto en el navegador.
 
 - `public/index.php`
   Entrada principal de Laravel.
-
 - `public/build/`
   Archivos frontend compilados por Vite para produccion o fallback.
 
@@ -162,23 +160,20 @@ Aqui vive el frontend de la aplicacion.
 - `app.jsx`
   Punto de entrada real de React.
   Busca el elemento `#app` y monta `ProductCatalogApp`.
-
 - `ProductCatalogApp.jsx`
   Componente principal de la interfaz.
   Aqui estan:
+
   - la carga del catalogo
   - la importacion del Excel
   - la edicion de productos
   - el render de cards
-
 - `lib/productValidation.js`
   Validaciones del lado cliente para reaccion inmediata antes de enviar datos al backend.
-
 - `app.js`
   Archivo heredado del esqueleto de Laravel.
   Solo importa `bootstrap.js`.
   **No es el punto de entrada principal actual** porque la app real usa `app.jsx`.
-
 - `bootstrap.js`
   Configuracion base de Axios.
 
@@ -192,7 +187,6 @@ Aqui vive el frontend de la aplicacion.
 - `app.blade.php`
   Vista Blade que sirve de puente entre Laravel y React.
   Contiene el `<div id="app"></div>` y llama a `@vite('resources/js/app.jsx')`.
-
 - `welcome.blade.php`
   Vista heredada del proyecto base de Laravel. No es la vista principal de esta app.
 
@@ -206,14 +200,6 @@ Eso significa que:
 - no existe `@vitejs/plugin-vue` en `vite.config.js`
 - no hay una carpeta de componentes Vue activa
 - la app del catalogo no usa Vue para renderizar la interfaz
-
-Si en el futuro quisieras usar Vue, normalmente aparecerian rutas o archivos como estos:
-
-- `resources/js/components/*.vue`
-- `resources/js/app.js` montando `createApp(...)`
-- configuracion de Vue en `vite.config.js`
-
-Hoy, eso no existe en este proyecto.
 
 ## Como interactuan Laravel, React y Vite
 
@@ -293,4 +279,3 @@ Herramientas:
 - **Laravel** sirve la aplicacion, valida datos, habla con la base de datos y expone la API.
 - **React** pinta la interfaz y maneja la experiencia de usuario.
 - **Vite** conecta ambas capas en desarrollo y build.
-
