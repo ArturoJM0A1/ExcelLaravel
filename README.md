@@ -1,4 +1,4 @@
-# Mercury Ledger
+# Convierte hojas de Excel en catálogos editables en tiempo real
 
 Aplicacion construida con Laravel 13 + React para importar un catalogo de productos desde Excel, validar sus datos, mostrarlos en tarjetas editables y actualizar la informacion sin recargar la pagina.
 
