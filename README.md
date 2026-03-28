@@ -2,9 +2,13 @@
 
 Aplicacion construida con Laravel 13 + React para importar un catalogo de productos desde Excel, validar sus datos, mostrarlos en tarjetas editables y actualizar la informacion sin recargar la pagina.
 
-## Video demostrativo:
- 
- https://youtu.be/I7IWkHEwJ5A?si=f5WSBc6j9JQeLpuf
+## Aspirante
+
+Arturo Juárez Monroy
+
+## Video demostrativo
+
+[![Ver video](https://img.youtube.com/vi/I7IWkHEwJ5A/0.jpg)](https://youtu.be/I7IWkHEwJ5A)
 
 ## Caracteristicas
 
@@ -16,12 +20,57 @@ Aplicacion construida con Laravel 13 + React para importar un catalogo de produc
 - Edicion inmediata de productos con persistencia en base de datos.
 - Pruebas automatizadas para importacion y actualizacion.
 
+## Configuración del Backend
+
+El sistema utiliza **Laravel 13** con **PHP 8.3**, configurado mediante archivos `.env` y el directorio `config/`.
+
+La base de datos es **SQLite**, y además se emplean tablas para:
+
+- `sessions`
+- `cache`
+- `jobs`
+
+La estructura del proyecto es estándar, sin personalizaciones fuera de lo común.
+
+- `GET /api/products` → Lista productos
+- `POST /api/products/import` → Importa un archivo Excel
+- `PUT /api/products/{product}` → Actualiza un producto
+
+La lógica del sistema se centra en la importación de un catálogo desde Excel utilizando **PhpSpreadsheet**.
+
+1. Se valida completamente el archivo.
+2. Si existe algún error, **no se guarda ningún dato**.
+3. Si todo es correcto, se **reemplaza completamente** el catálogo anterior (no se agregan registros).
+
+La validación está correctamente estructurada mediante:
+
+- **FormRequest**
+- Reglas compartidas
+- Validaciones personalizadas
+
+La API **no cuenta con autenticación**, ya que está diseñada para funcionar como una API interna.
+
+## Configuración del Frontend
+
+El frontend usa **React 19** con **Vite** y se monta dentro de Laravel (no es una SPA separada).
+
+**Entrada:** `resources/js/app.jsx`**Consumo de API:** usa directamente `/api/...`**Comunicación:** se realiza mediante `fetch`
+
+- Carga productos al iniciar
+- Permite importar archivos Excel
+- Permite editar productos
+
+Hay validación en frontend para mejorar la experiencia, pero la validación real se realiza en el backend.
+Aunque **Tailwind** está instalado, la UI usa mayoritariamente CSS propio.
+
+Algunos archivos como `axios` están presentes, pero actualmente no se utilizan. La app principal trabaja con **fetch**
+
 ## Stack
 
 - Backend: Laravel 13
 - Frontend: React 19 con Vite
 - Base de datos por defecto: SQLite
-- Lectura de Excel: `phpoffice/phpspreadsheet`
+- Lectura de Excel: `phpoffice/phpspreadsheet` para instalar las librerias `composer require phpoffice/phpspreadsheet`
 
 ## Instalacion
 
@@ -50,7 +99,6 @@ php artisan key:generate
 ```
 
 5. Crea o configura tu base de datos. Por defecto el proyecto usa SQLite.
-
 6. Ejecuta migraciones:
 
 ```bash
@@ -59,13 +107,13 @@ php artisan migrate
 
 ## Ejecucion
 
-En una terminal:
+En una terminal (Para el backend):
 
 ```bash
 php artisan serve --host=127.0.0.1 --port=8000
 ```
 
-En otra terminal:
+En otra terminal (Para el frontend):
 
 ```bash
 node .\node_modules\vite\bin\vite.js --host 127.0.0.1
@@ -132,4 +180,4 @@ npm run build
 
 ## Notas
 
-- El proyecto ya incluye una carpeta adicional llamada "Notas de la App" ahi se explica las características fundamentales del proyecto
+- El proyecto incluye una carpeta adicional llamada "Notas de la App" por si llega haber mas dudas, ahi se explica las características fundamentales del proyecto
