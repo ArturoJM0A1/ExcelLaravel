@@ -7,7 +7,7 @@ Aplicacion construida con Laravel 13 + React para importar un catalogo de produc
   <img src="https://www.vectorlogo.zone/logos/php/php-icon.svg" width="50" />
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="50" />
   <img src="https://vitejs.dev/logo.svg" width="60" />
-  <img src="https://www.sqlite.org/images/sqlite370_banner.gif" width="90" />
+  <img src="https://www.sqlite.org/images/sqlite370_banner.gif" width="80" />
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg" width="50" />
 </p>
 
