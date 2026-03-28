@@ -59,6 +59,4 @@ Puedes abrir el archivo `database/database.sqlite` con herramientas como:
 - SQLiteStudio
 - Extensiones de SQLite en VS Code
 
-## Resumen rapido
-
 La base de datos del proyecto esta dentro del mismo repositorio, en `database/database.sqlite`, y actualmente el sistema trabaja con **SQLite local**.
