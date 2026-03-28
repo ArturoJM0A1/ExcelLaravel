@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#101312">
-        <title>Mercury Ledger | Catalogo editable</title>
+        <title>Carga tu Excel | Catalogo editable</title>
         <style>
             body {
                 margin: 0;
@@ -45,7 +45,7 @@
     <body>
         <div id="app">
             <div class="boot-fallback">
-                <h1>Cargando Mercury Ledger...</h1>
+                <h1>Cargando ...</h1>
                 <p>Si esta pantalla no cambia en unos segundos, abre la app en <code>http://127.0.0.1:8000</code>.</p>
                 <p>Si sigues viendo esto, el frontend no termino de cargar y Laravel usara el build compilado cuando Vite no este disponible.</p>
                 <noscript>
