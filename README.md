@@ -2,7 +2,7 @@
 
 Aplicacion construida con Laravel 13 + React para importar un catalogo de productos desde Excel, validar sus datos, mostrarlos en tarjetas editables y actualizar la informacion sin recargar la pagina.
 
-## Video demostrativo
+## Video demostrativo:
  
  https://youtu.be/I7IWkHEwJ5A?si=f5WSBc6j9JQeLpuf
 
