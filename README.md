@@ -10,6 +10,8 @@ Arturo Juárez Monroy
 
 [![Ver video](https://img.youtube.com/vi/I7IWkHEwJ5A/0.jpg)](https://youtu.be/I7IWkHEwJ5A)
 
+### [Dar click](https://www.youtube.com/watch?v=I7IWkHEwJ5A)
+
 ## Caracteristicas
 
 - Carga de archivos `.xlsx` y `.xls`.
@@ -107,14 +109,25 @@ php artisan migrate
 
 ## Ejecucion
 
-En una terminal (Para el backend):
+### En una terminal (Para el backend):
 
+Se recomienda limpiar el cache antes de ejecutar
+```bash 
+php artisan optimize:clear
+```
+
+Ejecuta el Back
 ```bash
 php artisan serve --host=127.0.0.1 --port=8000
 ```
 
-En otra terminal (Para el frontend):
+### En otra terminal (Para el Frontend):
 
+Prepara el Front para producción
+```bash 
+npm run build
+```
+Ejecuta el Front
 ```bash
 node .\node_modules\vite\bin\vite.js --host 127.0.0.1
 ```
@@ -123,7 +136,7 @@ Luego abre la URL que muestre Laravel, normalmente [http://127.0.0.1:8000](http:
 
 Importante: no abras `http://localhost` sin puerto si tienes otro servicio ocupando el puerto `80`. En este proyecto la URL de desarrollo correcta es `http://127.0.0.1:8000` o `http://localhost:8000` cuando Laravel se ejecuta con `php artisan serve`.
 
-Tambien puedes usar un solo comando:
+### Tambien puedes usar un solo comando:
 
 ```bash
 composer run dev
