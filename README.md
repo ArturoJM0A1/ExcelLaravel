@@ -121,11 +121,13 @@ php artisan migrate
 ### En una terminal (Para el backend):
 
 Se recomienda limpiar el cache antes de ejecutar
-```bash 
+
+```bash
 php artisan optimize:clear
 ```
 
 Ejecuta el Back
+
 ```bash
 php artisan serve --host=127.0.0.1 --port=8000
 ```
@@ -133,10 +135,13 @@ php artisan serve --host=127.0.0.1 --port=8000
 ### En otra terminal (Para el Frontend):
 
 Prepara el Front para producción
-```bash 
+
+```bash
 npm run build
 ```
+
 Ejecuta el Front
+
 ```bash
 node .\node_modules\vite\bin\vite.js --host 127.0.0.1
 ```
@@ -176,6 +181,7 @@ Ese comando ya arranca Laravel y Vite sin depender de `npm run dev`.
 - La lectura del Excel se resolvio con `PhpSpreadsheet` para soportar `.xlsx` y `.xls`.
 - El frontend replica validaciones clave para dar feedback inmediato, pero el backend sigue siendo la fuente final de verdad.
 - Se usa como base de datos SQLite, ya que es una base de datos SQL ligera. A diferencia de sistemas grandes como MySQL o PostgreSQL, no requiere una instalación compleja ni un servidor dedicado, lo que la hace ideal para aplicaciones pequeñas, dispositivos móviles o aplicaciones de escritorio.
+- Por otro lado, las **migraciones** definen la estructura de la base de datos. Funcionan como un esquema versionado que describe la creación y modificación de tablas mediante código.
 
 ## Pruebas
 

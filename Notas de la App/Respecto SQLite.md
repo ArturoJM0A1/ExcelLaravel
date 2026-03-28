@@ -44,3 +44,9 @@ Es ideal para:
 * Proyectos IoT
 
 Debido a su **portabilidad** y **mantenimiento**.
+
+## Base de datos SQLite y migraciones en Laravel
+
+Las **migraciones** definen la estructura de la base de datos. Funcionan como un esquema versionado que describe la creación y modificación de tablas mediante código.
+
+* **Migraciones**: definición estructural de la base de datos
