@@ -2,6 +2,15 @@
 
 Aplicacion construida con Laravel 13 + React para importar un catalogo de productos desde Excel, validar sus datos, mostrarlos en tarjetas editables y actualizar la informacion sin recargar la pagina.
 
+<p align="center">
+  <img src="https://laravel.com/img/logomark.min.svg" width="50" />
+  <img src="https://www.vectorlogo.zone/logos/php/php-icon.svg" width="50" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" width="50" />
+  <img src="https://vitejs.dev/logo.svg" width="60" />
+  <img src="https://www.sqlite.org/images/sqlite370_banner.gif" width="90" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Microsoft_Excel_2013-2019_logo.svg" width="50" />
+</p>
+
 ## Aspirante
 
 Arturo Juárez Monroy
