@@ -87,7 +87,7 @@ Ese comando ya arranca Laravel y Vite sin depender de `npm run dev`.
 4. Si todo es valido, el catalogo se guarda y se renderiza en cards.
 5. Edita cualquier producto y guarda; la UI se actualiza de inmediato.
 
-## Endpoints principales
+## Endpoints de la API principales
 
 - `GET /api/products`
 - `POST /api/products/import`
@@ -110,7 +110,7 @@ Ejecuta la suite con:
 php artisan test
 ```
 
-## Build de produccion
+## Build de produccion (si deseas cambiar algo)
 
 ```bash
 npm run build
@@ -127,4 +127,4 @@ npm run build
 
 ## Notas
 
-- El proyecto ya incluye una carpeta adicional llamado LEER que explica las características fundamentales del proyecto
+- El proyecto ya incluye una carpeta adicional llamada LEER que explica las características fundamentales del proyecto
