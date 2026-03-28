@@ -136,7 +136,7 @@ export default function ProductCatalogApp() {
 
             <header className="topbar">
                 <div className="brand-lockup">
-                    <div className="brand-mark">Bienvenido</div>
+                    <div className="brand-mark">📗</div>
                     <div className="brand-copy">
                         <strong>Carga tu Excel</strong>
                         <span>
@@ -377,7 +377,7 @@ export default function ProductCatalogApp() {
             </p>
 
             <p className="footer-note">
-               By: Arturo Juarez Monoy
+                <strong>By: Arturo Juarez Monroy</strong>
             </p>
         </div>
     );
