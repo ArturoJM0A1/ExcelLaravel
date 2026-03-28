@@ -1,4 +1,4 @@
-# Base de datos leer
+# Base de datos
 
 ## Donde esta la base de datos
 
