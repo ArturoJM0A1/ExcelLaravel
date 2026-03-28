@@ -1,3 +1,7 @@
 usa SQLite, accedes a la base de datos abriendo el archivo:
-
 database.sqlite
+
+Puedes usar la extensión en  VS Code de;
+SQLite Viewer
+Florian Klampfer
+
