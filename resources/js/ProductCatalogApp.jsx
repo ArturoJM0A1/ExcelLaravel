@@ -332,7 +332,7 @@ export default function ProductCatalogApp() {
                         <span className="section-kicker">
                             Resultado del procesamiento
                         </span>
-                        <h2>Muro de productos</h2>
+                        <h2>Muro de productos Actuales</h2>
                         <p>
                             Cada pieza del catalogo se presenta como una ficha
                             editable con vista previa de imagen, stock y precio.
@@ -377,7 +377,7 @@ export default function ProductCatalogApp() {
             </p>
 
             <p className="footer-note">
-                <strong>By: Arturo Juarez Monroy</strong>
+                <strong>By: Arturo Juárez Monroy <br></br>GitHub: ArturoJM0A1</strong>
             </p>
         </div>
     );
